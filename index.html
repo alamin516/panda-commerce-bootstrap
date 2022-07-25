@@ -7,6 +7,9 @@
     <title>Panda Commerce Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <!-- Custom css  -->
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,30 +18,32 @@
     <header>
         <section class="container">
             <!-- Navbar Start -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#shoes">Shoes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#backpack">Backpack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <!-- Navbar End -->
@@ -47,16 +52,16 @@
         <section class="container mt-5 overflow-hidden">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active  bg-success border rounded p-5">
+                    <div class="carousel-item active  panda-bg-color border rounded p-5">
                         <div class="row">
                             <div class="col-md-7 d-flex align-items-center">
                                 <div class="banner-text">
-                                    <h2>Cool Dude Headphone</h2>
+                                    <h1>Cool Dude Headphone</h1>
                                     <p>This is the best headphone in the world for people who just want to waste
                                         time in
                                         front of funky world.</p>
                                     <h1>$420</h1>
-                                    <button class="btn btn-danger">Buy Now</button>
+                                    <button class="btn  panda-btn-bg">Buy Now</button>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -64,16 +69,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item bg-success border rounded p-5">
+                    <div class="carousel-item panda-bg-color border rounded p-5">
                         <div class="row">
                             <div class="col-md-7 d-flex align-items-center">
                                 <div class="banner-text">
-                                    <h2>Mega LCD TV For Sports</h2>
+                                    <h1>Mega LCD TV For Sports</h1>
                                     <p>This is the best headphone in the world for people who just want to waste
                                         time in
                                         front of funky world.</p>
                                     <h1>$1200</h1>
-                                    <button class="btn btn-danger">Buy Now</button>
+                                    <button class="btn  panda-btn-bg">Buy Now</button>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -81,16 +86,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item bg-success border rounded p-5">
+                    <div class="carousel-item panda-bg-color border rounded p-5">
                         <div class="row">
                             <div class="col-md-7 d-flex align-items-center">
                                 <div class="banner-text">
-                                    <h2>X-Box for your living room</h2>
+                                    <h1>X-Box for your living room</h1>
                                     <p>This is the best headphone in the world for people who just want to waste
                                         time in
                                         front of funky world.</p>
                                     <h1>$600</h1>
-                                    <button class="btn btn-danger">Buy Now</button>
+                                    <button class="btn  panda-btn-bg">Buy Now</button>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -117,13 +122,13 @@
         <section class="container my-5">
             <div class="row categories">
                 <div class="col-md-6 col-lg-4 col-sm-12 g-4">
-                    <div class="p-3 border rounded-3 d-flex align-items-center justify-content-around bg-danger">
+                    <div class="p-3 border rounded-3 d-flex align-items-center justify-content-around bg-warning">
                         <h1 class="text-white">Watch</h1>
                         <img src="images/categories/watch.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-sm-12 g-4">
-                    <div class="p-3 border rounded-3 d-flex align-items-center justify-content-around bg-warning">
+                    <div class="p-3 border rounded-3 d-flex align-items-center justify-content-around bg-success">
                         <h1 class="text-white">Bags</h1>
                         <img src="images/categories/bag.png" alt="">
                     </div>
@@ -140,7 +145,7 @@
         </section>
         <!-- Categories End  -->
         <!-- Shoes Start  -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -153,7 +158,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                      <button type="button" class="btn btn-warning">Warning</button>                    
+                      <button type="button" class="btn  panda-btn-bg">Warning</button>                    
                     </div>
                   </div>
                 </div>
@@ -167,7 +172,7 @@
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="m-3">
-                        <button type="button" class="btn btn-warning">Warning</button>    
+                        <button type="button" class="btn  panda-btn-bg">Warning</button>   
                     </div>
                   </div>
                 </div>
@@ -181,7 +186,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="m-3">
-                        <button type="button" class="btn btn-warning">Warning</button>    
+                        <button type="button" class="btn  panda-btn-bg">Warning</button>    
                     </div>
                   </div>
                 </div>
@@ -189,7 +194,7 @@
         </section>
         <!-- Shoes End  -->
         <!-- Backpack Start -->
-        <section class="container mt-5">
+        <section class="container my-5" id="backpack">
             <h1>Backpack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -202,7 +207,7 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="m-3">
-                      <button type="button" class="btn btn-warning">Warning</button>                    
+                      <button type="button" class="btn  panda-btn-bg">Warning</button>                    
                     </div>
                   </div>
                 </div>
@@ -216,7 +221,7 @@
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="m-3">
-                        <button type="button" class="btn btn-warning">Warning</button>    
+                        <button type="button" class="btn  panda-btn-bg">Warning</button>    
                     </div>
                   </div>
                 </div>
@@ -230,15 +235,35 @@
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="m-3">
-                        <button type="button" class="btn btn-warning">Warning</button>    
+                        <button type="button" class="btn  panda-btn-bg">Warning</button>    
                     </div>
                   </div>
                 </div>
               </div>
         </section>
         <!-- Backpack End -->
+        <!-- Subscribe Form Start -->
+        <section class="container my-5" id="subscribe">
+            <div  style="height: 300px;" class="subscribe d-flex justify-content-center align-items-center border rounded panda-bg-color p-5">
+                <div>
+                    <h2 class="text-center">LET'S STAY IN TOUCH
+                    </h2>
+                    <p class="text-center">Get updates on sales, specials and more</p>
+                    <form>
+                        <div class="form-group">
+                          <input type="email" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                       
+                        <button type="submit" class="btn  panda-btn-bg">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </section>
+        <!-- Subscribe Form End -->
     </main>
     <!-- Main End -->
+    <footer class="text-center py-2">
+        <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
